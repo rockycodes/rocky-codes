@@ -1,5 +1,5 @@
-#Requirements
-1. Express routes - probably just app.use to serve up my static files?
+# Requirements
+1. Express routes - app.use to serve up my static files
 2. React
     - Home component
         - rocky ----- codes
@@ -14,10 +14,5 @@
         - on hover: translucent dark background with white text
         - on click: go to deployed project
     - Contact
-        - social media links: github, linkedIn, twitter, insta, fb
-        - email
-
-
-
-# Reach goals:
-1. Form that sends me an email
+        - social media links: github, linkedIn, twitter
+        - form to send me an email

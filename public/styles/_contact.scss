@@ -51,3 +51,9 @@ $black:  rgb(22, 20, 20);
     }
   }
 } 
+
+@media (max-width: 720px){
+  .contact {
+    height: 100%;
+  }
+}

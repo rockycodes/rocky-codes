@@ -182,10 +182,27 @@ body {
 .about {
   background-color: #59344F;
 }
+.about .title {
+  font-size: 2em;
+}
+.about .header {
+  border-bottom: 1px solid white;
+  width: 5em;
+}
 .about p {
   color: white;
   font-size: 1.5em;
   letter-spacing: 0.15em;
+}
+.about ul {
+  margin-top: 0;
+  padding-left: 1em;
+}
+.about li {
+  color: white;
+  font-size: 1.5em;
+  letter-spacing: 0.15em;
+  padding-bottom: 0.5em;
 }
 
 #about {
@@ -193,25 +210,32 @@ body {
   display: flex;
   flex-direction: row;
   padding: 0 3em 0 3em;
+  height: auto;
 }
 #about img {
-  height: 20em;
+  height: 25em;
   margin-top: 2em;
   width: auto;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
   margin-right: 10%;
-  justify-self: flex-start;
+  align-self: flex-start;
 }
 
 #text {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 @media (max-width: 720px) {
   #about {
     display: flex;
     flex-direction: column;
+  }
+  #about img {
+    margin-right: 0;
+    height: 20em;
+    align-self: center;
   }
 
   .content {
@@ -228,6 +252,8 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
   height: auto;
+  padding-top: 2em;
+  padding-bottom: 3em;
 }
 
 .projectBox {
@@ -397,6 +423,12 @@ body {
 }
 .contact #form #submit:focus {
   outline: 0;
+}
+
+@media (max-width: 720px) {
+  .contact {
+    height: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

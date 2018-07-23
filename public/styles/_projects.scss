@@ -4,11 +4,6 @@ $green: #8BBF9F;
 $yellow: #D6BA73;
 $wheat: #F5E0B7;
 
-//apply links to new divs
-//push paragraphs down below images
-//make images smaller
-//make height fit content like i did in about section
-
 .projects {
   background-color: $green;
 }
@@ -19,6 +14,8 @@ $wheat: #F5E0B7;
   justify-content: space-around;
   flex-wrap: wrap;
   height: auto;
+  padding-top: 2em;
+  padding-bottom: 3em;
 }
 
 .projectBox {
@@ -108,7 +105,6 @@ $wheat: #F5E0B7;
     height: auto;
     .hoverBox {
       height: auto;
-
       opacity: 1;
       background-color: transparent;
       p {
