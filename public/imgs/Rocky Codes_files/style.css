@@ -1,0 +1,208 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #161414;
+}
+
+#app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+#header {
+  height: 33%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#header #headerContent {
+  width: 50em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Special Elite", cursive;
+}
+#header #headerContent p {
+  color: white;
+  font-size: 3em;
+  letter-spacing: 0.15em;
+  width: 4em;
+}
+#header #headerContent #heart {
+  margin: 0 1em;
+  width: 50%;
+}
+
+#navbar {
+  height: 66%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #161414;
+}
+
+#tabs {
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 30em;
+  align-self: flex-end;
+  margin-right: 8em;
+}
+#tabs button {
+  width: 5em;
+  align-self: flex-end;
+  height: 2em;
+  font-size: 1.5em;
+  font-family: "Roboto", sans-serif;
+  border-radius: 40% 40% 0 0;
+  border: 3px solid #161414;
+}
+#tabs button:hover {
+  height: 2.3em;
+  cursor: pointer;
+}
+#tabs button:focus {
+  outline: 0;
+}
+#tabs .active {
+  border: none;
+}
+#tabs img {
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+}
+
+.about {
+  background-color: #59344F;
+}
+.about p {
+  color: white;
+  font-size: 1.5em;
+  letter-spacing: 0.15em;
+}
+
+#about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10em 0 10em;
+}
+#about img {
+  height: 80%;
+  width: auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  margin-right: 10em;
+}
+
+#text {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects {
+  background-color: #8BBF9F;
+}
+
+#projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.projectBox {
+  width: 25em;
+  height: 25em;
+  background-size: cover;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 100%;
+  margin: 2em 1em;
+  /* need media query for if screen is below a certain width, wrap them */
+  /* or can say if they get squished to a min, wrap them */
+}
+.projectBox #title {
+  font-size: 1.2em;
+  border-bottom: 1px solid white;
+  padding-bottom: 3px;
+}
+.projectBox p {
+  font-family: "Open Sans", sans-serif;
+  opacity: 0;
+  color: #fff5f5;
+  text-align: center;
+}
+.projectBox a {
+  text-decoration: none;
+}
+
+#textWrapper {
+  padding: 2em 3em 0 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 100%;
+  letter-spacing: 0.1em;
+}
+
+.hoverBox {
+  height: 100%;
+  width: 100%;
+  background-color: #161414;
+  opacity: 0;
+  border-radius: 100%;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+.hoverBox:hover {
+  opacity: 0.9;
+  transition: 0.8s;
+  cursor: pointer;
+}
+.hoverBox:hover p {
+  opacity: 1;
+  transition: 1s;
+}
+
+.graceshopper {
+  background-image: url("./imgs/graceshopper.png");
+}
+
+.studybreak {
+  background-image: url("./imgs/studybreak-light.png");
+}
+
+.donke {
+  background-image: url("./imgs/donke1.png");
+}
+.donke #textWrapper {
+  padding-top: 0.5em;
+}
+
+.contact {
+  background-color: #D6BA73;
+}
+.contact p {
+  color: white;
+}
+
+#contentContainer {
+  height: 80%;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

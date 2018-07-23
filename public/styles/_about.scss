@@ -1,0 +1,44 @@
+$purple: #59344F;
+$grey: #857E7B;
+$green: #8BBF9F;
+$yellow: #D6BA73;
+$wheat: #F5E0B7;
+
+.about {
+  background-color: $purple;
+    p {
+        color: white;
+        font-size: 1.5em;
+        letter-spacing: .15em;
+    }
+}
+
+#about {
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: row;
+  padding: 0 3em 0 3em;
+  img {
+    height: 20em;
+    margin-top: 2em;
+    width: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    margin-right: 10%;
+    justify-self: flex-start;
+  }
+}
+
+#text {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 720px){
+  #about {
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    height: auto;
+  }
+}

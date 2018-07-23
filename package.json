@@ -1,0 +1,44 @@
+{
+  "name": "rocky-codes",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": ">= 7.0.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server",
+    "build": "webpack",
+    "sass": "sass --watch public/style.scss public/style.css",
+    "build-dev": "webpack -w",
+    "start-dev": "npm run sass & npm run build-dev & npm run start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.1",
+    "morgan": "^1.8.1",
+    "react": "^16.3.1",
+    "react-dom": "^16.0.0",
+    "react-router-dom": "^4.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.40",
+    "@babel/polyfill": "^7.0.0-beta.40",
+    "@babel/preset-env": "^7.0.0-beta.40",
+    "@babel/preset-react": "^7.0.0-beta.40",
+    "@babel/preset-stage-2": "^7.0.0-beta.40",
+    "@babel/register": "^7.0.0-beta.40",
+    "babel-eslint": "^8.2.2",
+    "babel-loader": "^8.0.0-beta.2",
+    "chai": "^3.5.0",
+    "enzyme": "^3.0.0",
+    "enzyme-adapter-react-16": "^1.0.0",
+    "file-loader": "^1.1.11",
+    "mocha": "^5.2.0",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.3"
+  }
+}

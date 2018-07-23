@@ -1,0 +1,48 @@
+$purple: #59344F;
+$grey: #857E7B;
+$green: #8BBF9F;
+$yellow: #D6BA73;
+$wheat: #F5E0B7;
+
+//420px
+//descriptions below projects
+
+//wishlist...
+//scroll effect
+//tabs expand on hover
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(22, 20, 20);
+}
+
+#app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  // overflow: hidden;
+}
+
+
+#contentContainer {
+  height: 80%;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+@import 'styles/header';
+@import 'styles/navbar';
+@import 'styles/about';
+@import 'styles/projects';
+@import 'styles/contact';
+

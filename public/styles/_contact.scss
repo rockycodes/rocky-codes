@@ -1,0 +1,53 @@
+$purple: #59344F;
+$grey: #857E7B;
+$green: #8BBF9F;
+$yellow: #D6BA73;
+$wheat: #F5E0B7;
+$black:  rgb(22, 20, 20);
+
+.contact {
+  background-color: $yellow;
+  font-family: 'Open Sans', sans-serif;
+  #form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 50%;
+    border-radius: 10%;
+    p {
+      color: white;
+      margin-bottom: .5em;
+      padding: .5em;
+    }
+    .field {
+      padding: .5em;
+    }
+    #message {
+      height: 8em;
+      margin-bottom: 1.5em;
+      border: none;
+      padding: .5em;
+    }
+    #submit {
+      background: $green;
+      padding: 8px 15px 8px 15px;
+      border: none;
+      color: #fff;
+      font-size: 1em;
+      width: 30%;
+      min-width: 200px;
+      align-self: center;
+      margin-bottom: 1em;
+      &:hover {
+        cursor: pointer;
+        background-color: rgb(124, 170, 141);
+      }
+      &:active {
+        background-color: rgb(174, 243, 201)
+      }
+      &:focus {
+            outline:0;
+      }
+    }
+  }
+} 

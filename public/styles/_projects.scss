@@ -1,0 +1,147 @@
+$purple: #59344F;
+$grey: #857E7B;
+$green: #8BBF9F;
+$yellow: #D6BA73;
+$wheat: #F5E0B7;
+
+//apply links to new divs
+//push paragraphs down below images
+//make images smaller
+//make height fit content like i did in about section
+
+.projects {
+  background-color: $green;
+}
+
+#projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.projectBox {
+  width: 23em;
+  height: 23em;
+  background-size: cover;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 100%;
+  margin: 2em 1em;
+  #title {
+      font-size: 1.2em;
+      border-bottom: 1px solid white;
+      padding-bottom: 3px;
+  }
+  p {
+      font-family: 'Open Sans', sans-serif;
+      opacity: 0;
+      color: rgb(255, 245, 245);
+      text-align: center;
+      font-size: .8em;
+  }
+  .prompt {
+    font-style: italic;
+  }
+  a {
+      text-decoration: none;
+  }   
+  .mobileImg {
+    display: none;
+  }
+    /* need media query for if screen is below a certain width, wrap them */
+  /* or can say if they get squished to a min, wrap them */
+}
+
+#textWrapper {
+  padding: 2em 3em 0 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 100%;
+  letter-spacing: .1em;
+}
+
+.hoverBox {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(22, 20, 20);
+  opacity: 0;
+  border-radius: 100%;
+  border: 1px solid rgba(0, 0, 0, 0); 
+    &:hover {
+        opacity: .9;
+        transition: .8s;
+        cursor: pointer;
+        p {
+            opacity: 1;
+            transition: 1s;
+        }
+    } 
+}
+
+.graceshopper {
+  background-image: url('./imgs/graceshopper.png');
+}
+
+.studybreak {
+  background-image: url('./imgs/studybreak-light.png');
+}
+
+.donke {
+  background-image: url('./imgs/donke1.png');
+    #textWrapper{
+        padding-top: .5em;
+    }
+    .description {
+        margin-top: .2em;
+    } 
+    .prompt {
+      margin-top: .2em;
+    }
+}
+
+@media (max-width: 420px) {
+  .projectBox {
+    background-image: none;
+    box-shadow: none;
+    height: auto;
+    .hoverBox {
+      height: auto;
+
+      opacity: 1;
+      background-color: transparent;
+      p {
+        opacity: 1;
+      }
+    }
+    #textWrapper {
+      .mobileImg {
+        display: block;
+        width: 15em;
+        height: 15em;
+        background-size: cover;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        margin-top: -2em;
+      }
+    }
+  }
+  .graceshopper {
+      margin-bottom:0 ;
+      .mobileImg {
+        background-image: url('./imgs/graceshopper.png');
+      }
+    }
+    .studybreak {
+      margin-top: 1em;
+      margin-bottom: 0;
+      .mobileImg {
+        background-image: url('./imgs/studybreak-light.png');
+      }
+    }
+    .donke {
+      .mobileImg {
+        background-image: url('./imgs/donke1.png');
+      }
+    }
+}
