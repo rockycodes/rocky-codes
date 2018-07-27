@@ -1,11 +1,4 @@
 $purple: #59344F;
-$grey: #857E7B;
-$green: #8BBF9F;
-$yellow: #D6BA73;
-$wheat: #F5E0B7;
-
-//420px
-//descriptions below projects
 
 //wishlist...
 //scroll effect
@@ -32,12 +25,11 @@ body {
 
 .content {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
-  display: flex;
   flex-direction: column;
+  flex: 1 1 auto;
   align-items: center;
-  height: 100%;
+  height: auto;
 }
 
 @import 'styles/header';

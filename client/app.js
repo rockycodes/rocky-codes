@@ -15,26 +15,44 @@ export default class App extends React.Component {
     }
 
     componentDidMount(){
-        let rockyStr = "rocky"
-        let codesStr = "codes"
-        let rocky = ""
-        let codes = ""
-        let i = 0
-        let timer = setInterval(() => {
-            rocky += rockyStr[i]
-            i++
-            this.setState({rocky})
-            if (rocky === rockyStr) clearInterval(timer)
-        }, 200)
-        setTimeout(() => {
-            i = 0
+        const typing  = (str, i) => {
+            let newStr = ""
+            let stateObj = {}
             let timer = setInterval(() => {
-                codes += codesStr[i]
+                newStr += str[i]
+                stateObj[str] = newStr
                 i++
-                this.setState({codes})
-                if (codes === codesStr) clearInterval(timer)
+                this.setState(stateObj)
+                if (newStr === str) {
+                    clearInterval(timer)
+                    i = 0
+                }
             }, 200)
+        }
+        typing("rocky", 0)
+        setTimeout(() => {
+            typing("codes", 0)
         }, 4000)
+
+        // const rockyStr = "rocky", codesStr = "codes"
+        // let rocky = "", codes = "", i = 0
+        // let timer = setInterval(() => {
+        //     rocky += rockyStr[i]
+        //     i++
+        //     this.setState({rocky})
+        //     if (rocky === rockyStr) {
+        //         clearInterval(timer)
+        //         i=0
+        //     }
+        // }, 200)
+        // setTimeout(() => {
+        //     let timer = setInterval(() => {
+        //         codes += codesStr[i]
+        //         i++
+        //         this.setState({codes})
+        //         if (codes === codesStr) clearInterval(timer)
+        //     }, 200)
+        // }, 4000)
     }
 
     render (){
@@ -56,7 +74,7 @@ export default class App extends React.Component {
                     <a href="https://www.linkedin.com/in/rachelefine/" target="_blank">
                         <img className='icon' src={linkedin} />
                     </a>
-                    <a href="https://twitter.com/ballerinadino?lang=en" target="_blank">
+                    <a href="https://twitter.com/rockycodes" target="_blank">
                         <img className='icon' src={twitter} />
                     </a>
                     <a href="https://github.com/rockycodes/" target="_blank">

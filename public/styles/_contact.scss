@@ -1,19 +1,15 @@
 $purple: #59344F;
-$grey: #857E7B;
-$green: #8BBF9F;
-$yellow: #D6BA73;
-$wheat: #F5E0B7;
 $black:  rgb(22, 20, 20);
 
 .contact {
-  background-color: $yellow;
+  background-color: $purple;
   font-family: 'Open Sans', sans-serif;
   #form {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     width: 50%;
-    border-radius: 10%;
+    margin-bottom: 2em;
     p {
       color: white;
       margin-bottom: .5em;
@@ -29,7 +25,7 @@ $black:  rgb(22, 20, 20);
       padding: .5em;
     }
     #submit {
-      background: $green;
+      background: rgb(134, 54, 113);
       padding: 8px 15px 8px 15px;
       border: none;
       color: #fff;
@@ -40,10 +36,7 @@ $black:  rgb(22, 20, 20);
       margin-bottom: 1em;
       &:hover {
         cursor: pointer;
-        background-color: rgb(124, 170, 141);
-      }
-      &:active {
-        background-color: rgb(174, 243, 201)
+        background-color: rgb(134, 85, 121);
       }
       &:focus {
             outline:0;
@@ -52,8 +45,8 @@ $black:  rgb(22, 20, 20);
   }
 } 
 
-@media (max-width: 720px){
+@media (max-width: 420px){
   .contact {
-    height: 100%;
+    height: auto;
   }
 }

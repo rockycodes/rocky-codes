@@ -17,12 +17,11 @@ body {
 
 .content {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
-  display: flex;
   flex-direction: column;
+  flex: 1 1 auto;
   align-items: center;
-  height: 100%;
+  height: auto;
 }
 
 #header {
@@ -94,11 +93,13 @@ body {
     margin-left: 1.5em;
     transition-delay: 5s;
     transition: all 0.5s ease-in;
+    margin-bottom: 1em;
   }
   #header #headerContent {
     display: flex;
     flex-direction: column;
     max-width: 425px;
+    width: auto;
   }
   #header #headerContent p {
     height: 1em;
@@ -181,17 +182,22 @@ body {
 }
 .about {
   background-color: #59344F;
+  font-family: "Open Sans", sans-serif;
 }
-.about .title {
+.about a {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.about #title {
   font-size: 2em;
 }
 .about .header {
-  border-bottom: 1px solid white;
-  width: 5em;
+  font-size: 1em;
 }
 .about p {
   color: white;
-  font-size: 1.5em;
+  font-size: 1em;
   letter-spacing: 0.15em;
 }
 .about ul {
@@ -200,7 +206,7 @@ body {
 }
 .about li {
   color: white;
-  font-size: 1.5em;
+  font-size: 1em;
   letter-spacing: 0.15em;
   padding-bottom: 0.5em;
 }
@@ -208,23 +214,39 @@ body {
 #about {
   border: 1px solid transparent;
   display: flex;
-  flex-direction: row;
-  padding: 0 3em 0 3em;
+  flex-direction: column;
+  padding: 0 3em 3em 3em;
   height: auto;
 }
-#about img {
+#about #main {
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+#about #main img {
+  float: left;
   height: 25em;
-  margin-top: 2em;
+  margin: 2em 3em 2em 0;
   width: auto;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
-  margin-right: 10%;
   align-self: flex-start;
 }
-
-#text {
+#about #subcontent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#about #subcontent .contentBox {
+  border-left: 1px solid white;
+  flex-grow: 1;
+  max-width: 28%;
+  min-width: 300px;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  padding: 1em 2em 0 1em;
+  margin-bottom: 2em;
+}
+#about #subcontent .contentBox li {
+  font-size: 0.8em;
 }
 
 @media (max-width: 720px) {
@@ -242,8 +264,22 @@ body {
     height: auto;
   }
 }
+@media (max-width: 420px) {
+  .about #title {
+    font-size: 1.5em;
+  }
+  .about .header {
+    font-size: 1em;
+  }
+  .about p {
+    font-size: 0.8em;
+  }
+  .about li {
+    font-size: 0.8em;
+  }
+}
 .projects {
-  background-color: #8BBF9F;
+  background-color: #59344F;
 }
 
 #projects {
@@ -300,13 +336,12 @@ body {
 .hoverBox {
   height: 100%;
   width: 100%;
-  background-color: #161414;
+  background-color: #070606;
   opacity: 0;
   border-radius: 100%;
-  border: 1px solid rgba(0, 0, 0, 0);
 }
 .hoverBox:hover {
-  opacity: 0.9;
+  opacity: 0.8;
   transition: 0.8s;
   cursor: pointer;
 }
@@ -379,7 +414,7 @@ body {
   }
 }
 .contact {
-  background-color: #D6BA73;
+  background-color: #59344F;
   font-family: "Open Sans", sans-serif;
 }
 .contact #form {
@@ -387,7 +422,7 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   width: 50%;
-  border-radius: 10%;
+  margin-bottom: 2em;
 }
 .contact #form p {
   color: white;
@@ -404,7 +439,7 @@ body {
   padding: 0.5em;
 }
 .contact #form #submit {
-  background: #8BBF9F;
+  background: #863671;
   padding: 8px 15px 8px 15px;
   border: none;
   color: #fff;
@@ -416,18 +451,15 @@ body {
 }
 .contact #form #submit:hover {
   cursor: pointer;
-  background-color: #7caa8d;
-}
-.contact #form #submit:active {
-  background-color: #aef3c9;
+  background-color: #865579;
 }
 .contact #form #submit:focus {
   outline: 0;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 420px) {
   .contact {
-    height: 100%;
+    height: auto;
   }
 }
 

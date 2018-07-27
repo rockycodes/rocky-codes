@@ -12,7 +12,7 @@
     "build": "webpack",
     "sass": "sass --watch public/style.scss public/style.css",
     "build-dev": "webpack -w",
-    "start-dev": "npm run sass & npm run build-dev & npm run start"
+    "start-dev": "npm run build-dev & npm run start"
   },
   "author": "",
   "license": "ISC",

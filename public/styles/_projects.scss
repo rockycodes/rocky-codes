@@ -1,11 +1,7 @@
 $purple: #59344F;
-$grey: #857E7B;
-$green: #8BBF9F;
-$yellow: #D6BA73;
-$wheat: #F5E0B7;
 
 .projects {
-  background-color: $green;
+  background-color: $purple;
 }
 
 #projects {
@@ -62,12 +58,11 @@ $wheat: #F5E0B7;
 .hoverBox {
   height: 100%;
   width: 100%;
-  background-color: rgb(22, 20, 20);
+  background-color: rgb(7, 6, 6);
   opacity: 0;
   border-radius: 100%;
-  border: 1px solid rgba(0, 0, 0, 0); 
     &:hover {
-        opacity: .9;
+        opacity: .8;
         transition: .8s;
         cursor: pointer;
         p {

@@ -73,11 +73,15 @@ $wheat: #F5E0B7;
       margin-left: 1.5em;
       transition-delay: 5s;
       transition: all .5s ease-in;
+      //CHANGE
+      margin-bottom: 1em;
     }
     #headerContent {
       display: flex;
       flex-direction: column;
       max-width: 425px;
+      //CHANGE
+      width: auto;
       p {
         height: 1em;
         display: inline-block;

@@ -2,8 +2,8 @@ import React from 'react';
 import {About, Projects, Contact} from './index';
 import {projectList} from '../utils.js';
 import heart from '../../public/imgs/heart.png';
-import computer from '../../public/imgs/computer.svg.png';
-import email from '../../public/imgs/email.png';
+import computer from '../../public/imgs/computer.svg';
+import email from '../../public/imgs/email.svg';
 
 
 export default class Navbar extends React.Component {
