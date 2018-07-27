@@ -4,7 +4,6 @@ import linkedin from '../public/imgs/linkedin2.svg';
 import twitter from '../public/imgs/twitter2.svg';
 import github from '../public/imgs/github.svg';
 
-
 export default class App extends React.Component {
     constructor(){
         super()
@@ -12,47 +11,29 @@ export default class App extends React.Component {
             rocky: '',
             codes: ''
         }
+        this.typing = this.typing.bind(this);
     }
 
     componentDidMount(){
-        const typing  = (str, i) => {
-            let newStr = ""
-            let stateObj = {}
-            let timer = setInterval(() => {
-                newStr += str[i]
-                stateObj[str] = newStr
-                i++
-                this.setState(stateObj)
-                if (newStr === str) {
-                    clearInterval(timer)
-                    i = 0
-                }
-            }, 200)
-        }
-        typing("rocky", 0)
+        this.typing("rocky", 0)
         setTimeout(() => {
-            typing("codes", 0)
+            this.typing("codes", 0)
         }, 4000)
+    }
 
-        // const rockyStr = "rocky", codesStr = "codes"
-        // let rocky = "", codes = "", i = 0
-        // let timer = setInterval(() => {
-        //     rocky += rockyStr[i]
-        //     i++
-        //     this.setState({rocky})
-        //     if (rocky === rockyStr) {
-        //         clearInterval(timer)
-        //         i=0
-        //     }
-        // }, 200)
-        // setTimeout(() => {
-        //     let timer = setInterval(() => {
-        //         codes += codesStr[i]
-        //         i++
-        //         this.setState({codes})
-        //         if (codes === codesStr) clearInterval(timer)
-        //     }, 200)
-        // }, 4000)
+    typing (str, i) {
+        let newStr = ""
+        let stateObj = {}
+        let timer = setInterval(() => {
+            newStr += str[i]
+            stateObj[str] = newStr
+            i++
+            this.setState(stateObj)
+            if (newStr === str) {
+                clearInterval(timer)
+                i = 0
+            }
+        }, 200)
     }
 
     render (){

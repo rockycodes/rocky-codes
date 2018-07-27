@@ -7,10 +7,10 @@ const About = () => {
       <div id='main'>
         <img src={headshot}/>
         <p id='title'>hi, i'm rocky</p>
-        <p>I'm an educator and social worker turned web developer based in nyc!</p>
-        <p>I've always loved math, logic, and building things and, after ten years in human services, I decided to reconnect to my left brain and think about other ways to make a difference in the world.</p>
-        <p>From the first time I sat down to write a for-loop, I was hooked. Programming combines my love of problem solving with my love for creating. I attended the Grace Hopper program in NYC and made the full career switch to developer.</p>
-        <p>You can currently find me coding around NYC. I'm especially interested in the intersection of technology and social justice and the ways in which tech can faciliate equity and real social change.</p>
+        <p>I’m a web developer based in NYC with a background in education and social work.</p>
+        <p>I've always loved math, logic, and building -- from slip-n-slides to strong communities. After ten years working with youth in NYC and Oakland, I wanted to reconnect to my left brain and consider new ways to make a difference in the world.</p>
+        <p>I made the full career switch to developer by attending the Grace Hopper program at Fullstack in NYC. The first time I sat down to write a for loop, I was hooked. Programming combines my love of problem solving with my love for creating.</p>
+        <p>You can currently find me coding around NYC in coffee shops, at Fullstack, and at various meetups, like Women Who Code, Progressive HackNight, and Lesbians Who Tech. I'm especially interested in the intersection of tech and social justice, and the ways in which technology can be reimagined to go beyond good intentions and empower new groups of people.</p>
         <p>Connect with me on <a href='https://github.com/rockycodes/'>github</a>, <a href='https://www.linkedin.com/in/rachelefine/'>linkedin</a>, or <a href='https://twitter.com/rockycodes'>twitter</a>, or send me a message via the message tab!</p>
       </div>
       <div id='subcontent'>
@@ -33,9 +33,9 @@ const About = () => {
         <div className='contentBox'>
           <p className='header'>fun facts</p>
           <ul>
-            <li>I love circus arts and am an amateur aerialist and juggler</li>
-            <li>I once took a two month road trip and drove 12,000 miles across the US and Canada, just me and my dog</li>
-            <li>I'm an avid reader and especially love dystopic and science fiction</li>
+            <li>I love circus arts, and am an amateur aerialist and juggler.</li>
+            <li>I once took a two month road trip that covered 12,000 miles across the US and Canada, just me and my dog, Stella.</li>
+            <li>I'm an avid reader and especially love dystopic and science fiction.</li>
           </ul>
         </div>
       </div>

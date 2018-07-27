@@ -1,6 +1,6 @@
 import React from 'react';
 import {About, Projects, Contact} from './index';
-import {projectList} from '../utils.js';
+import {projectList} from '../projectlist.js';
 import heart from '../../public/imgs/heart.png';
 import computer from '../../public/imgs/computer.svg';
 import email from '../../public/imgs/email.svg';
