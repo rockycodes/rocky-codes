@@ -145,16 +145,19 @@ body {
   font-family: "Roboto", sans-serif;
   border-radius: 40% 40% 0 0;
   border: 3px solid #161414;
+  background-color: #3e2437;
 }
 #tabs button:hover {
   height: 2.3em;
   cursor: pointer;
+  background-color: #59344F;
 }
 #tabs button:focus {
   outline: 0;
 }
 #tabs .active {
   border: none;
+  background-color: #59344F;
 }
 #tabs img {
   width: 1em;
@@ -265,16 +268,34 @@ body {
   }
 }
 @media (max-width: 420px) {
-  .about #title {
+  #about {
+    padding: 0 1.5em 1.5em 1.5em;
+  }
+  #about #main {
+    margin-left: 0;
+  }
+  #about #main img {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+  #about #main #title {
     font-size: 1.5em;
   }
-  .about .header {
-    font-size: 1em;
+  #about #subcontent {
+    padding: 0 1.5em 0 0;
   }
-  .about p {
+  #about #subcontent p {
     font-size: 0.8em;
   }
-  .about li {
+  #about #subcontent .contentBox {
+    padding: 1em 0 0 1em;
+    min-width: 100%;
+  }
+  #about #subcontent .contentBox .header {
+    font-size: 1em;
+  }
+  #about #subcontent .contentBox li {
     font-size: 0.8em;
   }
 }

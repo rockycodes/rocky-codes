@@ -4,6 +4,7 @@ $green: #8BBF9F;
 $yellow: #D6BA73;
 $wheat: #F5E0B7;
 $black:  rgb(22, 20, 20);
+$darkpurple: #3e2437;
 
 #navbar {
     height: 66%;
@@ -33,9 +34,11 @@ $black:  rgb(22, 20, 20);
         font-family: 'Roboto', sans-serif;
         border-radius: 40% 40% 0 0;
         border: 3px solid rgb(22, 20, 20);
+        background-color: $darkpurple;
         &:hover {
             height: 2.3em;
             cursor: pointer;
+            background-color: $purple;
         }
         &:focus {
             outline:0;
@@ -43,6 +46,7 @@ $black:  rgb(22, 20, 20);
     }
     .active {
         border: none;
+        background-color: $purple;
     }
     img {
         width: 1em;

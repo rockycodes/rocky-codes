@@ -85,18 +85,37 @@ $purple: #59344F;
 }
 
 @media (max-width: 420px){
-  .about {
-    #title {
-      font-size: 1.5em;
+  #about {
+    padding: 0 1.5em 1.5em 1.5em;
+    #main {
+      margin-left: 0;
+      img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+      }
+      #title {
+        font-size: 1.5em;
+      }
     }
-    .header {
-      font-size: 1em;
+    #subcontent {
+      p {
+        font-size: .8em;
+      }
+      padding: 0 1.5em 0 0;
+      .contentBox {
+        padding: 1em 0 0 1em;
+        min-width: 100%;
+        .header {
+         font-size: 1em;
+        }
+        li {
+          font-size: .8em;
+        }
+      }
+      
     }
-    p {
-      font-size: .8em;
-    }
-    li {
-      font-size: .8em;
-    }
+
+    
   }
 }
