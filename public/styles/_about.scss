@@ -37,7 +37,6 @@ $purple: #59344F;
   padding: 0 3em 3em 3em;
   height: auto;
   #main {
-    margin-left: 2em;
     margin-bottom: 1em;
     img {
       float: left;
@@ -52,6 +51,7 @@ $purple: #59344F;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     .contentBox {
       border-left: 1px solid white;
       flex-grow: 1;
