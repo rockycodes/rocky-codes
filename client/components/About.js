@@ -9,7 +9,7 @@ const About = () => {
         <p id='title'>hi, i'm rocky</p>
         <p>I’m a web developer based in NYC with a background in education and social work.</p>
         <p>I've always loved math, logic, and building -- from slip-n-slides to strong communities. After ten years working with youth in NYC and Oakland, I wanted to reconnect to my left brain and consider new ways to make a difference in the world.</p>
-        <p>I made the full career switch to developer by attending the Grace Hopper program at Fullstack in NYC. The first time I sat down to write a for loop, I was hooked. Programming combines my love of problem solving with my love for creating.</p>
+        <p>I made the full career switch to developer by attending the Grace Hopper program at Fullstack in NYC. The first time I sat down to write a for-loop, I was hooked. Programming combines my love of problem solving with my love for creating.</p>
         <p>You can currently find me coding around NYC in coffee shops, at Fullstack, and at various meetups, like Women Who Code, Progressive HackNight, and Lesbians Who Tech. I'm especially interested in the intersection of tech and social justice, and the ways in which technology can be reimagined to go beyond good intentions and empower new groups of people.</p>
         <p>Connect with me on <a href='https://github.com/rockycodes/'>github</a>, <a href='https://www.linkedin.com/in/rachelefine/'>linkedin</a>, or <a href='https://twitter.com/rockycodes'>twitter</a>, or send me a message via the message tab!</p>
       </div>
