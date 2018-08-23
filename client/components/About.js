@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="content about" id="about">
       <div id='main'>
-        <img src={headshot}/>
+        <img src={headshot} alt="headshot"/>
         <p id='title'>hi, i'm rocky</p>
         <p>I’m a web developer based in NYC with a background in education and social work.</p>
         <p>I've always loved math, logic, and building -- from slip-n-slides to strong communities. After ten years working with youth in NYC and Oakland, I wanted to reconnect to my left brain and consider new ways to make a difference in the world.</p>
