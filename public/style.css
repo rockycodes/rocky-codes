@@ -323,29 +323,23 @@ body {
   /* need media query for if screen is below a certain width, wrap them */
   /* or can say if they get squished to a min, wrap them */
 }
-.projectBox #title {
-  font-size: 1.2em;
-  border-bottom: 1px solid white;
-  padding-bottom: 3px;
-}
-.projectBox p {
-  font-family: "Open Sans", sans-serif;
-  opacity: 0;
-  color: #fff5f5;
-  text-align: center;
-  font-size: 0.8em;
-}
-.projectBox .prompt {
-  font-style: italic;
-}
-.projectBox a {
-  text-decoration: none;
-}
-.projectBox .mobileImg {
-  display: none;
-}
 
-#textWrapper {
+.hoverBox {
+  height: 24em;
+  width: 24em;
+  background-color: #070606;
+  opacity: 0;
+  border-radius: 100%;
+  z-index: 1;
+  position: absolute;
+  margin: 1.5em 0.5em;
+}
+.hoverBox:hover {
+  opacity: 0.8;
+  transition: 0.8s;
+  cursor: pointer;
+}
+.hoverBox .textWrapper {
   padding: 2em 3em 0 3em;
   display: flex;
   flex-direction: column;
@@ -353,22 +347,35 @@ body {
   border-radius: 100%;
   letter-spacing: 0.1em;
 }
-
-.hoverBox {
-  height: 100%;
-  width: 100%;
-  background-color: #070606;
-  opacity: 0;
-  border-radius: 100%;
+.hoverBox .textWrapper #title {
+  font-size: 1.2em;
+  border-bottom: 1px solid white;
+  padding-bottom: 3px;
 }
-.hoverBox:hover {
-  opacity: 0.8;
-  transition: 0.8s;
-  cursor: pointer;
-}
-.hoverBox:hover p {
+.hoverBox .textWrapper p {
+  font-family: "Open Sans", sans-serif;
   opacity: 1;
-  transition: 1s;
+  color: #fff5f5;
+  text-align: center;
+  font-size: 0.8em;
+}
+.hoverBox .textWrapper .prompt {
+  font-style: italic;
+}
+.hoverBox .textWrapper a {
+  text-decoration: none;
+}
+.hoverBox .textWrapper .mobileImg {
+  display: none;
+}
+.hoverBox #donke {
+  padding-top: 0.5em;
+}
+.hoverBox #donke .description {
+  margin-top: 0.2em;
+}
+.hoverBox #donke .prompt {
+  margin-top: 0.2em;
 }
 
 .graceshopper {
@@ -381,15 +388,6 @@ body {
 
 .donke {
   background-image: url("./imgs/donke1.png");
-}
-.donke #textWrapper {
-  padding-top: 0.5em;
-}
-.donke .description {
-  margin-top: 0.2em;
-}
-.donke .prompt {
-  margin-top: 0.2em;
 }
 
 @media (max-width: 420px) {

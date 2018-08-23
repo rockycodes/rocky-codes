@@ -21,55 +21,62 @@ $purple: #59344F;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 100%;
   margin: 2em 1em;
-  #title {
-      font-size: 1.2em;
-      border-bottom: 1px solid white;
-      padding-bottom: 3px;
-  }
-  p {
-      font-family: 'Open Sans', sans-serif;
-      opacity: 0;
-      color: rgb(255, 245, 245);
-      text-align: center;
-      font-size: .8em;
-  }
-  .prompt {
-    font-style: italic;
-  }
-  a {
-      text-decoration: none;
-  }   
-  .mobileImg {
-    display: none;
-  }
     /* need media query for if screen is below a certain width, wrap them */
   /* or can say if they get squished to a min, wrap them */
 }
 
-#textWrapper {
-  padding: 2em 3em 0 3em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 100%;
-  letter-spacing: .1em;
-}
-
 .hoverBox {
-  height: 100%;
-  width: 100%;
-  background-color: rgb(7, 6, 6);
+  height: 24em;
+  width: 24em;
+  background-color: #070606;
   opacity: 0;
   border-radius: 100%;
-    &:hover {
-        opacity: .8;
-        transition: .8s;
-        cursor: pointer;
-        p {
-            opacity: 1;
-            transition: 1s;
-        }
+  z-index: 1;
+  position: absolute;
+  margin: 1.5em .5em;
+  &:hover {
+    opacity: .8;
+    transition: .8s;
+    cursor: pointer;
+  } 
+  .textWrapper {
+    padding: 2em 3em 0 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 100%;
+    letter-spacing: .1em;
+    #title {
+      font-size: 1.2em;
+      border-bottom: 1px solid white;
+      padding-bottom: 3px;
+    }
+    p {
+      font-family: 'Open Sans', sans-serif;
+      opacity: 1;
+      color: rgb(255, 245, 245);
+      text-align: center;
+      font-size: .8em;
+    }
+    .prompt {
+      font-style: italic;
+    }
+    a {
+      text-decoration: none;
+    }   
+    .mobileImg {
+      display: none;
+    }
+  }
+  #donke {
+    padding-top: .5em;
+    .description {
+      margin-top: .2em;
     } 
+    .prompt {
+      margin-top: .2em;
+    }
+  }
 }
 
 .graceshopper {
@@ -82,15 +89,6 @@ $purple: #59344F;
 
 .donke {
   background-image: url('./imgs/donke1.png');
-    #textWrapper{
-        padding-top: .5em;
-    }
-    .description {
-        margin-top: .2em;
-    } 
-    .prompt {
-      margin-top: .2em;
-    }
 }
 
 @media (max-width: 420px) {
