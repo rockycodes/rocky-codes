@@ -33,7 +33,7 @@ export default class App extends React.Component {
                 clearInterval(timer)
                 i = 0
             }
-        }, 200)
+        }, 150)
     }
 
     render (){

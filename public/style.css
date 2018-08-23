@@ -441,9 +441,11 @@ body {
 .contact #form {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  align-content: center;
   width: 50%;
-  margin-bottom: 2em;
+  padding-bottom: calc((70vh - 24em)/2);
+  height: 26em;
+  padding-top: calc((40vh - 26em)/2);
 }
 .contact #form p {
   color: white;
@@ -454,7 +456,7 @@ body {
   padding: 0.5em;
 }
 .contact #form #message {
-  height: 8em;
+  height: 5em;
   margin-bottom: 1.5em;
   border: none;
   padding: 0.5em;
@@ -468,11 +470,14 @@ body {
   width: 30%;
   min-width: 200px;
   align-self: center;
-  margin-bottom: 1em;
+  margin: 1em;
+  height: 3em;
+  border-radius: 20px;
 }
 .contact #form #submit:hover {
   cursor: pointer;
   background-color: #865579;
+  transition: 0.8s;
 }
 .contact #form #submit:focus {
   outline: 0;

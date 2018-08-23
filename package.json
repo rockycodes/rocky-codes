@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server",
     "build": "webpack",
-    "sass": "sass --watch public/style.scss public/style.css",
+    "sass": "sass public/style.scss public/style.css",
     "build-dev": "webpack -w",
     "start-dev": "npm run build-dev & npm run start"
   },
