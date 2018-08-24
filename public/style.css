@@ -320,8 +320,6 @@ body {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 100%;
   margin: 2em 1em;
-  /* need media query for if screen is below a certain width, wrap them */
-  /* or can say if they get squished to a min, wrap them */
 }
 
 .hoverBox {
@@ -391,20 +389,13 @@ body {
 }
 
 @media (max-width: 420px) {
-  .projectBox {
-    background-image: none;
-    box-shadow: none;
-    height: auto;
-  }
-  .projectBox .hoverBox {
+  .hoverBox {
+    position: static;
     height: auto;
     opacity: 1;
     background-color: transparent;
   }
-  .projectBox .hoverBox p {
-    opacity: 1;
-  }
-  .projectBox #textWrapper .mobileImg {
+  .hoverBox .textWrapper .mobileImg {
     display: block;
     width: 15em;
     height: 15em;
@@ -413,22 +404,28 @@ body {
     margin-top: -2em;
   }
 
-  .graceshopper {
+  .projectBox {
+    background-image: none;
+    box-shadow: none;
+    height: auto;
+  }
+
+  #graceshopper {
     margin-bottom: 0;
   }
-  .graceshopper .mobileImg {
+  #graceshopper .mobileImg {
     background-image: url("./imgs/graceshopper.png");
   }
 
-  .studybreak {
+  #studybreak {
     margin-top: 1em;
     margin-bottom: 0;
   }
-  .studybreak .mobileImg {
+  #studybreak .mobileImg {
     background-image: url("./imgs/studybreak-light.png");
   }
 
-  .donke .mobileImg {
+  #donke .mobileImg {
     background-image: url("./imgs/donke1.png");
   }
 }

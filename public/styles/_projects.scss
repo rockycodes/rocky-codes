@@ -21,8 +21,6 @@ $purple: #59344F;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 100%;
   margin: 2em 1em;
-    /* need media query for if screen is below a certain width, wrap them */
-  /* or can say if they get squished to a min, wrap them */
 }
 
 .hoverBox {
@@ -92,19 +90,12 @@ $purple: #59344F;
 }
 
 @media (max-width: 420px) {
-  .projectBox {
-    background-image: none;
-    box-shadow: none;
+  .hoverBox {
+    position: static;
     height: auto;
-    .hoverBox {
-      height: auto;
-      opacity: 1;
-      background-color: transparent;
-      p {
-        opacity: 1;
-      }
-    }
-    #textWrapper {
+    opacity: 1;
+    background-color: transparent;
+    .textWrapper {
       .mobileImg {
         display: block;
         width: 15em;
@@ -115,20 +106,26 @@ $purple: #59344F;
       }
     }
   }
-  .graceshopper {
+  .projectBox {
+    background-image: none;
+    box-shadow: none;
+    height: auto;
+    
+  }
+  #graceshopper {
       margin-bottom:0 ;
       .mobileImg {
         background-image: url('./imgs/graceshopper.png');
       }
     }
-    .studybreak {
+    #studybreak {
       margin-top: 1em;
       margin-bottom: 0;
       .mobileImg {
         background-image: url('./imgs/studybreak-light.png');
       }
     }
-    .donke {
+    #donke {
       .mobileImg {
         background-image: url('./imgs/donke1.png');
       }
