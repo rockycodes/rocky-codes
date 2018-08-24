@@ -58,7 +58,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 2vh;
-  position: absolute;
+  position: fixed;
   top: 0px;
   right: 15px;
   margin-right: 1em;
@@ -218,7 +218,7 @@ body {
   border: 1px solid transparent;
   display: flex;
   flex-direction: column;
-  padding: 0 3em 3em 3em;
+  padding: 0 11em 3em 9em;
   height: auto;
 }
 #about #main {
